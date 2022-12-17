@@ -1,2 +1,2 @@
-# AS2V-competitive-progtramming-leetcode
+# A2SV-competitive-programming-leetcode
 This repo contains my solved leetcode problems.

@@ -1,0 +1,14 @@
+ def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        out={}
+        wrap=[]
+        for j in range(len(points)):
+            dis=0
+            for i in points[j]:
+                dis+=pow(i,2)
+            out[j]=dis**0.5
+        new=sorted(out.items(),key=lambda x:x[1])
+        for m in range(k):
+            p=0
+            p=points[new[m][0]]
+            wrap.append(p)
+        return wrap
